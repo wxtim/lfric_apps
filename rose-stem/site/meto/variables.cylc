@@ -30,7 +30,7 @@
                                                "ngarch",
                                                "science_shared"]}) %}
 
-{% do site_vars.update({"site_platforms": ["ex1a",
+{% do site_vars.update({"site_platforms": ["ex",
                                            "azspice"]}) %}
 
 {# Settings for EX Collab Zone #}
@@ -44,8 +44,8 @@
 {% endif %}
 
 {% if site_vars["ex_trustzone"] == "collab" %}
-    {% do site_vars.update({"launch_platform": "ex1a"}) %}
-    {% do site_vars.update({"scripts_platform": "ex-bc"}) %}
+    {% do site_vars.update({"launch_platform": "ex"}) %}
+    {% do site_vars.update({"scripts_platform": "ex"}) %}
 {% else %}
     {% do site_vars.update({"launch_platform": "azspice"}) %}
     {% do site_vars.update({"scripts_platform": "azspice"}) %}
