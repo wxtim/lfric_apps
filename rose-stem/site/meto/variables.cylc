@@ -45,7 +45,7 @@
 
 {% if site_vars["ex_trustzone"] == "collab" %}
     {% do site_vars.update({"launch_platform": "ex1a"}) %}
-    {% do site_vars.update({"scripts_platform": "ex1a"}) %}
+    {% do site_vars.update({"scripts_platform": "ex-bc"}) %}
 {% else %}
     {% do site_vars.update({"launch_platform": "azspice"}) %}
     {% do site_vars.update({"scripts_platform": "azspice"}) %}
